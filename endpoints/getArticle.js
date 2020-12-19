@@ -7,7 +7,7 @@ let getArticle = (req, res) => {
   // execute query
   db.query(query, (err, articles) => {
     if (err) {
-      return res.send(err);
+      return res.status(400).send(err);
     }
     res.json(articles);
   });

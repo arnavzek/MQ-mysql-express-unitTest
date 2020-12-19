@@ -41,3 +41,5 @@ app.get("/", (req, res, next) => {
 app.listen(port, () => {
   console.log(`Server is up on ${port}`);
 });
+
+module.exports = app;

@@ -17,7 +17,7 @@ function makeConnection() {
       console.log("error when connecting to db:", err);
       setTimeout(makeConnection, 2000); //reconnect
     } else {
-      console.log("DB connection established!");
+      // console.log("DB connection established!");
     }
   });
 

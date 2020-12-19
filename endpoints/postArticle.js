@@ -10,9 +10,9 @@ let postArticle = (params, callback) => {
 
   // execute query
   db.query(query, (err, article) => {
-    callback(article);
+    callback(article, err);
     if (err) return console.log(err);
-    console.log("Article Posted", params, article);
+    //console.log("Article Posted", params, article);
   });
 };
 

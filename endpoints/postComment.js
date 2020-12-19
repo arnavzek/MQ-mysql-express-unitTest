@@ -11,9 +11,9 @@ let postComment = (params, callback) => {
 
   // execute query
   db.query(query, (err, comment) => {
-    callback(comment);
+    callback(comment, err);
     if (err) return console.log(err);
-    console.log("comment posted", params, comment);
+    //console.log("comment posted", params, comment);
   });
 };
 

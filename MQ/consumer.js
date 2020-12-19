@@ -10,7 +10,7 @@ amqp.connect(CONN_URL, function (err, conn) {
 });
 
 function createChannel(err, ch) {
-  console.log("MQ channel created");
+  // console.log("MQ channel created");
   ch.consume("postArticle", articleConsumer, { noAck: false });
   ch.consume("postComment", commentsConsumer, { noAck: false });
 
